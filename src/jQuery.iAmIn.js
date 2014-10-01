@@ -1,8 +1,8 @@
 /**
  * @file
  * @author {https://github.com/ezhikov|Kirill Popolov}
- * @license MIT
- * @version 0.3.4
+ * @license {http://opensource.org/licenses/MIT|MIT}
+ * @version 0.3.5
  * @todo make it relate not only to body, but any desired container
  * @todo make demo
  * @todo add callback
@@ -20,6 +20,8 @@
      * @param {number} [offset = 0] Number of offset pixels
      * @param {jQuery|string} [parent = this.parent()] Element to stick to
      * @returns {jQuery}
+     * @example
+     * $(element).iAmIn(); // will set your element on a side of its parent within body (if it can) or at start of the body (if can't).
      */
     $.fn.iAmIn = function(offset, parent) {
         var bodySize = {h:document.body.offsetHeight, w:document.body.offsetWidth},
@@ -27,9 +29,7 @@
         params.offset = typeof offset === 'number' ? offset : 0;
         params.parent = (offset instanceof jQuery || typeof offset === 'string') ? $(offset) : (parent || false);
         return this.each(function(){
-            debugger;
             params.parent = params.parent || $(this).parent();
-            debugger;
             var self = this,
                 parentPos = $(params.parent).offset(),
                 middlePos = function(axis) {

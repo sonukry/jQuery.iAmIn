@@ -1,0 +1,27 @@
+{
+    "name": "iAmIn",
+    "title": "jQuery.iAmIn plugin",
+    "description": "Plugin that will set your element on a side of its parent within body (if it can) or at start of the body (if can't).",
+    "keywords": [
+        "jQuery",
+        "position"
+    ],
+    "version": "0.3.5",
+    "author": {
+        "name": "Kirill Popolov",
+        "email": "k.popolov@gmail.com",
+        "url": "https://github.com/ezhikov"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/MIT"
+        }
+    ],
+    "bugs": "https://github.com/ezhikov/jQuery.iAmIn/issues",
+    "homepage": "https://github.com/ezhikov/jQuery.iAmIn",
+    "download": "https://github.com/ezhikov/jQuery.iAmIn",
+    "dependencies": {
+        "jquery": ">=1.4"
+    }
+}
